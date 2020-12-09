@@ -1,0 +1,478 @@
+/*----------------------------------------------
+
+1. CRNA:            #101119;
+2. SVETLO PLAVA:    #A0AABB;
+3. BELA:    	    #FFFFFF;
+4. SVETLO CRVENA:   #EF233C;
+5. TAMNO CRVENA:    #B80028;
+
+----------------------------------------------*/
+
+h2 {
+    color: #B80028;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.simboli-vodoravno {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.simboli-vodoravno > div {
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simboli-vodoravno p, .simboli-vodoravno h3 {
+    position: relative;
+    z-index: 2;
+}
+
+.uvuci-tekst{
+    margin: 0 30px;
+}
+
+.sivi-div {
+    background-color: #b3b3b3;
+}
+
+.beli-paragraf {
+    color: #FFFFFF;
+}
+
+.crveni-naslov {
+    color: #B80028;
+    margin-bottom: 20px;
+}
+
+.crveni-okvir {
+    width: 350px;
+    height: 350px;
+    border: 3px solid #B80028;
+    position:absolute;
+    z-index: 1;
+}
+
+.crni-okvir {
+    width: 350px;
+    height: 350px;
+    border: 3px solid #101119;
+    position:absolute;
+    z-index: 1;
+}
+
+.sivi-okvir {
+    width: 350px;
+    height: 350px;
+    border: 3px solid #A0AABB;
+    position:absolute;
+    z-index: 1;
+}
+
+.origami {
+    background-image: url(img/simboli/levo-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.skytree {
+    border: 5px solid #101119;
+    position: relative;
+}
+
+.skytree div {
+    margin-left: 150px;
+}
+
+.skytree img {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 400px;
+    z-index: 1;
+}
+
+.samuraji {
+    background-color: #101119;
+    position: relative;
+}
+
+.samuraji p {
+    color: #FFFFFF;
+}
+
+.samuraji img {
+    position: absolute;
+    top: 30px;
+    width: 300px;
+}
+
+.gejse {
+    background-image: url(img/simboli/desno-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sagano {
+    position: relative;
+}
+
+.sagano div {
+    margin-right: 100px;
+}
+
+.sivi-naslov {
+    color: #A0AABB;
+    margin-bottom: 20px;
+}
+
+.crni-naslov {
+    color: #101119;
+    margin-bottom: 20px;
+}
+
+.sagano img {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 300px;
+}
+
+.sinkasen {
+    border: 5px solid #101119;
+    position: relative;
+}
+
+.sinkasen img {
+    position: absolute;
+    bottom: -5px;
+    left: -200px;
+    width: 400px;
+}
+
+.anime {
+    background-color: #0d0918;
+}
+
+.susi {
+    background-image: url(img/simboli/desno-4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.tresnja {
+    background-image: url(img/simboli/levo-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sumo {
+    border:5px solid #101119;
+    position: relative;
+}
+
+.sumo div {
+    margin-bottom: 60px;
+}
+
+.sumo .crveni-okvir {
+    margin-bottom: 0;
+}
+
+.sumo img {
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 300px;
+    z-index: 2;
+}
+
+.beli-naslov {
+    margin-bottom: 20px;
+}
+
+.izuvanje {
+    background-color: #101119;
+}
+
+.izuvanje p {
+    color:#FFFFFF;
+}
+
+.hramovi {
+    background-image: url(img/simboli/desno-6.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.haiku {
+    background-image: url(img/simboli/levo-7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nindze {
+    position: relative;
+    border: 5px solid #101119;
+}
+
+.nindze div {
+    margin-left: 150px;
+}
+
+.nindze img {
+    position: absolute;
+    width: 350px;
+    bottom: 0;
+    left: 10px;
+}
+
+.dvorci {
+    background-color: #101119;
+    position: relative;
+}
+
+.dvorci div {
+    margin-bottom: 60px;
+}
+
+.dvorci img {
+    width: 350px;
+    position: absolute;
+    bottom:10px;
+}
+
+.fudzi {
+    position: relative;
+}
+
+.fudzi div {
+    margin-bottom: 60px;
+}
+
+.fudzi img {
+    width: 350px;
+    position: absolute;
+    bottom:10px;
+}
+
+.kimono {
+    background-image: url(img/simboli/levo-9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bonsai {
+    position: relative;
+    border: 5px solid #101119;
+}
+
+.bonsai img {
+    position: absolute;
+    bottom:30px;
+    right: 30px;
+    width: 250px;
+}
+
+.muzej {
+    background-image: url(img/simboli/desno-10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.saran {
+    background-image: url(img/simboli/levo-11.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.macka {
+    background-color: #101119;
+    position: relative;
+}
+
+.macka img {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+}
+
+.banje {
+    background-color: #B80028;
+    position: relative;
+    border: 5px solid #101119;
+}
+
+.pisanje {
+    background-image: url(img/simboli/desno-12.png);
+    background-size:cover;
+    background-position: center;
+}
+
+.pisanje p {
+    color: #B80028;
+}
+
+.sake {
+    background-image: url(img/simboli/levo-13.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.ramen {
+    background-color: #A0AABB;
+    border: 5px solid #101119;
+    position: relative;
+}
+
+.ramen img {
+    position: absolute;
+    width: 300px;
+    opacity: 0.5;
+}
+
+.manga {
+    background-color: #101119;
+    position: relative;
+}
+
+.manga div {
+    margin-bottom: 60px;
+}
+
+.manga img {
+    width: 300px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.caj {
+    background-image: url(img/simboli/desno-14.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.karaoke {
+    background-image: url(img/simboli/levo-15.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.vestine {
+    border: 5px solid #101119;
+}
+
+/*----------------------------- RESPONZIVNOST ----------------------------------------*/
+
+@media (max-width:1050px) {
+    
+    #simboli {
+        padding: 100px 50px;
+    }
+
+}
+
+@media (max-width:900px) {
+    
+    #simboli {
+        padding: 100px 10px;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    #simboli {
+        padding: 100px 0;
+    }
+    
+    .simboli-vodoravno > div {
+        width: 380px;
+        height: 380px;
+    }
+
+}
+
+@media (max-width:750px) {
+    
+    .simboli-vodoravno {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .simboli-vodoravno > div {
+        width: 400px;
+        height: 400px;
+    }
+
+    .sinkasen img {
+        display: none;
+    }
+
+    .sagano img {
+        bottom: 0;
+    }
+
+}
+
+@media (max-width:450px) {
+    
+    .simboli-vodoravno > div {
+        width: 350px;
+        height: 450px;
+    }
+
+    .crveni-okvir, .crni-okvir, .sivi-okvir {
+        width: 300px;
+        height: 400px;
+    }
+
+    .dvorci img {
+        bottom: 0;
+    }
+
+}
+
+@media (max-width:370px) {
+    
+    .simboli-vodoravno > div {
+        width: 320px;
+        height: 450px;
+    }
+
+    .skytree img {
+        width: 300px;
+    }
+
+    .skytree div {
+        margin-left: 100px;
+    }
+
+    .crveni-okvir, .crni-okvir, .sivi-okvir {
+        width: 280px;
+        height: 400px;
+    }
+
+    .nindze img {
+        width: 250px;
+    }
+
+    .nindze div {
+        margin-left: 100px;
+    }
+
+    .dvorci img {
+        width: 300px;
+    }
+
+}

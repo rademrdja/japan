@@ -1,0 +1,374 @@
+#kompanije {
+  padding: 100px 10%;
+}
+
+#kompanije h2 {
+  color: #B80028;
+}
+
+#kompanije p {
+  color: #FFFFFF;
+}
+
+#kompanije .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px 250px 250px;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+#kompanije .kompanija {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#kompanije .kompanija .center {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#kompanije .kompanija .overlay {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+}
+
+#kompanije .kompanija .overlay p {
+  height: 0;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+#kompanije .kompanija:hover .overlay {
+  transition: 0.7s ease;
+  display: block;
+  color: white;
+  opacity: 1;
+  height: 100%;
+  background-color: #a30023;
+  cursor: pointer;
+}
+#kompanije .kompanija:hover .overlay p {
+  height: auto;
+}
+#kompanije #nintendo {
+  background: url("./img/kompanije/nintendo.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+#kompanije #toyota {
+  background: url("./img/kompanije/toyota.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+#kompanije #sony {
+  background: url("./img/kompanije/sony.jpg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  grid-column-start: 4;
+}
+#kompanije #canon {
+  background: url("./img/kompanije/canon.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+#kompanije #micubishi {
+  background: url("./img/kompanije/mitsubishi.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 2;
+}
+#kompanije #shiseido {
+  background: url("./img/kompanije/shiseido.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+}
+#kompanije #suzuki {
+  background: url("./img/kompanije/suzuki.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+}
+#kompanije #nisan {
+  background: url("./img/kompanije/nissan.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 3;
+}
+#kompanije #honda {
+  background: url("./img/kompanije/honda.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 3;
+  grid-row-end: span 2;
+  grid-column-start: 4;
+}
+#kompanije #mazda {
+  background: url("./img/kompanije/mazda.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+}
+
+#kompanije #panasonic {
+  background: url("./img/kompanije/parasonic.jpg");
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+
+@media (max-width:1150px) {
+
+  #kompanije {
+    padding: 100px 5%;
+  }
+
+  #kompanije .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 280px 280px 280px 280px;
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+
+}
+
+@media (max-width:1000px) {
+
+  #kompanije .container {
+    grid-template-rows: repeat(8, 200px);
+  }
+
+  #kompanije #nintendo {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #kompanije #toyota {
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  #kompanije #sony {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #kompanije #canon {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  #kompanije #micubishi {
+    grid-row-start:7;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  #kompanije #shiseido {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  #kompanije #suzuki {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #kompanije #nisan {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  #kompanije #honda {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #kompanije #mazda {
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  
+  #kompanije #panasonic {
+    grid-row-start: 8;
+    grid-row-end:8;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+
+@media (max-width:650px) {
+
+  #kompanije .container {
+    grid-template-rows: repeat(8,280px);
+  }
+
+}
+
+@media (max-width:550px) {
+
+  #kompanije .container {
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(11, 280px);
+    grid-row-gap:30px;
+  }
+
+  #kompanije #nintendo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  
+  #kompanije #toyota {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #kompanije #sony {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #kompanije #canon {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #kompanije #micubishi {
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #kompanije #shiseido {
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #kompanije #suzuki {
+    grid-row-start: 7;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  #kompanije #nisan {
+    grid-row-start: 8;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  #kompanije #honda {
+    grid-row-start: 9;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  #kompanije #mazda {
+    grid-row-start: 10;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  
+  #kompanije #panasonic {
+    grid-row-start: 11;
+    grid-row-end:11;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+}
+
+@media (max-width:400px) {
+  
+  #kompanije .container {
+    grid-template-rows: repeat(11,350px);
+  }
+  
+}

@@ -1,0 +1,183 @@
+/*----------------------------------------------
+
+1. CRNA:            #101119;
+2. SVETLO PLAVA:    #A0AABB;
+3. BELA:    	    #FFFFFF;
+4. SVETLO CRVENA:   #EF233C;
+5. TAMNO CRVENA:    #B80028;
+
+----------------------------------------------*/
+
+#ime, #religija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ime-tekst p, .religija-tekst p{
+    width: 70%;
+}
+
+.ime-slika, .religija-slika {
+    width: 400px;
+}
+
+.ime-tekst h2, .religija-tekst h2{
+    color: #B80028;
+}
+
+/*----------------------------------- ISTORIJA ----------------------------------------*/
+
+#istorija {
+    background-image: url(img/istorija.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    padding: 0;
+    position: relative;
+    z-index: 98;
+    overflow: hidden;
+}
+
+.crveni-overlay {
+    height: 100%;
+    background-color: #b80028d0;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.crveni-overlay p {
+    color: #FFFFFF;
+}
+
+.crveni-overlay:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.istorija-prvi-paragraf {
+    margin-bottom: 30px;
+}
+
+/*----------------------------------- STATISTIKA ----------------------------------------*/
+
+#statistika {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.statistika-slika {
+    width: 500px;
+}
+
+.statistika-lista {
+    list-style: none;
+}
+
+.statistika-lista li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.statistika-lista span {
+    color: #B80028;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/*----------------------------------- ZGRADE ----------------------------------------*/
+
+#zgrade {
+    background-image: url(img/zgrade.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#zgrade p {
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+/*----------------------------------- RESPONZIVNOST ----------------------------------------*/
+
+@media (max-width: 1000px) {
+
+    #statistika {
+        justify-content: space-between;
+        padding: 100px 5%;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .ime-slika, .religija-slika {
+        width: 300px;
+    }
+
+}
+
+@media (max-width:850px) {
+
+    #statistika {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #ime, #religija {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ime-tekst, .religija-tekst {
+        margin-bottom: 40px;
+    }
+
+    .ime-tekst p, .religija-tekst p {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .statistika-slika {
+        width: 400px;
+    }
+
+    .ime-slika, .religija-slika {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .statistika-slika {
+        width: 300px;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
+
+    #statistika {
+        padding: 80px 5%;
+    }
+
+    .crveni-overlay {
+        padding: 80px 5%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+}
