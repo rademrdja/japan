@@ -1,0 +1,202 @@
+body {
+  background: url("./img/anketa/backgroundAnketa.jpg");
+  background-blend-mode: saturation;
+  background-size: cover;
+}
+
+output, label {
+  color: #ffffff;
+}
+
+#anketaDiv .forma {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#anketaDiv #ulaznaDiv {
+  text-align: justify;
+}
+
+#anketaDiv #ulaznaDiv input {
+  position: absolute;
+  left: 25%;
+  bottom: 30px;
+  height: 40px;
+  width: 50%;
+}
+
+#anketaDiv #personalDiv {
+  display: none;
+}
+
+#anketaDiv #porekloDiv {
+  display: none;
+}
+
+#anketaDiv #feedbackDiv {
+  display: none;
+}
+
+#anketaDiv .forma form {
+  width: 325px;
+  height: 350px;
+}
+
+#anketaDiv .forma form fieldset {
+  position: relative;
+  height: 100%;
+  box-shadow: 0 6px 20px 9px rgba(0, 0, 0, 1);
+  border-radius: 40px;
+  border: #a30023 3px solid;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+#anketaDiv #ulaznaDiv form fieldset {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#imeTxt,
+#prezimeTxt,
+#emailTxt {
+  float: right;
+  background: none;
+  border: none;
+  background: none;
+  border-bottom: #a30023 3px solid;
+  color: #e04557;
+}
+
+#imeTxt:focus,
+#prezimeTxt:focus,
+#emailTxt:focus {
+  outline: #a30023 2px;
+  background: none;
+}
+
+#anketaDiv .forma form fieldset legend {
+  float: right;
+}
+#anketaDiv .forma form fieldset output {
+  text-align: justify;
+}
+#anketaDiv .forma form fieldset input[type="radio"] {
+  opacity: 0;
+}
+
+#anketaDiv .forma form fieldset input[type="radio"]:hover + label {
+  border: #a30023 1.5px solid;
+  border-radius: 15px;
+}
+
+#anketaDiv .forma form fieldset label {
+  line-height: 25px;
+}
+
+#anketaDiv .forma form fieldset input[type="radio"]:checked + label {
+  border: #a30023 2.5px solid;
+  border-radius: 20px;
+  padding: 2px 5px;
+}
+
+#anketaDiv .forma form fieldset a.nazadBtn {
+  position: absolute;
+  text-align: center;
+  color: #e04557;
+  font-weight: bolder;
+
+  height: 40px;
+  width: 60px;
+  bottom: 30px;
+  left: 90px;
+
+  font-size: 40px;
+  background: transparent;
+  border: none;
+}
+
+#anketaDiv .forma form fieldset a.nazadBtn:hover {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#anketaDiv .forma form fieldset a.nazadBtn:focus {
+  border: none;
+}
+#anketaDiv .forma form fieldset input.submit {
+  position: absolute;
+  font-weight: bolder;
+  font-size: larger;
+  height: 40px;
+  width: 60px;
+  bottom: 30px;
+  right: 90px;
+  text-decoration: none;
+  color: #e04557;
+  font-size: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+#anketaDiv .forma form fieldset input.submit:hover {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+#anketaDiv .forma form fieldset textarea:focus {
+  outline: #e04557 1px dotted;
+}
+#anketaDiv .forma form fieldset textarea {
+  background: none;
+  color: #e04557;
+  border: #e04557 1px solid;
+  resize: none;
+  width: 98%;
+}
+
+#anketaDiv .forma form fieldset #ocenaRange {
+  width: 100%;
+}
+
+#anketaDiv .forma form fieldset #ulaznaSubmit {
+  background-color: #a30023;
+  border-radius: 40px;
+  border: #101119 2px solid;
+  color: white;
+  font-weight: bolder;
+}
+
+#anketaDiv .forma form fieldset #ulaznaSubmit:hover {
+  font-weight: bolder;
+  color: #a30023;
+  background-color: white;
+  cursor: pointer;
+}
+
+#anketaDiv .forma form fieldset #ulaznaSubmit:focus {
+  outline: none;
+}
+
+#ocenaRange {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: white;
+  outline: none;
+  opacity: 0.7;
+}
+
+#ocenaRange:hover {
+  opacity: 1;
+}
+
+#ocenaRange::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 40px;
+  background: #e04557;
+  cursor: pointer;
+}
