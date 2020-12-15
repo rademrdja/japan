@@ -8,6 +8,10 @@ output, label {
   color: #ffffff;
 }
 
+prikaziocena {
+  color:white;
+}
+
 #anketaDiv .forma {
   display: flex;
   height: 100vh;
